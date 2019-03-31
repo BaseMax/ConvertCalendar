@@ -59,5 +59,7 @@ date jalali2gregorian(date input) {
 		result.year+=(int)((temp-1)/365);
 		temp=(temp-1)%365;
 	}
+	result.day=temp + 1;
+	int array[]={0, 31, ((result.year%4==0 && result.year%100!=0) || (result.year%400==0))?29:28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	return result;
 }
