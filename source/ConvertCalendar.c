@@ -25,5 +25,11 @@ date gregorian2jalali(date input) {
 	int days=((int)((temp+3)/4)) + (365*input.year) - ((int)((temp+99)/100)) - 80 + array[input.month-1] + ((int)((temp+399)/400)) + input.day;
 	result.year+=33*((int)(days/12053)); 
 	days%=12053;
+	result.year+=4*((int)(days/1461));
+	days%=1461;
+	if(days > 365){
+		result.year+=(int)((days-1)/365);
+		days=(days-1)%365;
+	}
 	return result;
 }
