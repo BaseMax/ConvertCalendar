@@ -13,5 +13,7 @@
 
 int main() {
 	date input={2019, 03, 31};
+	date result=gregorian2jalali(input);
+	printf("==> Result : %d/%d/%d\n", result.year, result.month, result.day);
 	return 0;
 }
