@@ -9,3 +9,8 @@
 *
 **/
 #include "ConvertCalendar.h"
+
+date gregorian2jalali(date input) {
+	date result;
+	return result;
+}
