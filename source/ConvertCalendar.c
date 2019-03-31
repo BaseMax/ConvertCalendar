@@ -61,5 +61,8 @@ date jalali2gregorian(date input) {
 	}
 	result.day=temp + 1;
 	int array[]={0, 31, ((result.year%4==0 && result.year%100!=0) || (result.year%400==0))?29:28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	int length=sizeof(array)/sizeof(array[0]);
+	for(int index=0;index<length;index++) {
+	}
 	return result;
 }
