@@ -35,3 +35,7 @@ date gregorian2jalali(date input) {
 	result.day=1+((days < 186)?(days%31):((days-186)%30));
 	return result;
 }
+date jalali2gregorian(date input) {
+	date result;
+	return result;
+}
