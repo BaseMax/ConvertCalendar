@@ -8,3 +8,9 @@
 * @Repository : https://github.com/BaseMax/ConvertCalendar
 *
 **/
+typedef struct {
+	// We can use the uint8_t type.
+	int year;
+	int month;
+	int day;
+} date;
