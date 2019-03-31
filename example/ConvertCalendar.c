@@ -10,3 +10,8 @@
 **/
 #include <stdio.h>
 #include "../source/ConvertCalendar.h"
+
+int main() {
+	date input={2019, 03, 31};
+	return 0;
+}
