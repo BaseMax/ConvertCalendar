@@ -13,3 +13,10 @@ date gregorian2jalali(input);
 ```c
 date gregorian2jalali(date input);
 ```
+
+## Example I/O
+
+```
+Input: 2019, 03, 31
+Output: 1398, 1, 11
+```
