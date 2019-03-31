@@ -14,3 +14,5 @@ typedef struct {
 	int month;
 	int day;
 } date;
+
+date gregorian2jalali(date input);
