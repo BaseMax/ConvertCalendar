@@ -22,5 +22,12 @@ int main() {
 	input.day=31;
 	result=gregorian2jalali(input);
 	printf("==> Result : %d/%d/%d\n", result.year, result.month, result.day);
+
+	input.year=1398;
+	input.month=01;
+	input.day=13;
+	result=jalali2gregorian(input);
+	printf("==> Result : %d/%d/%d\n", result.year, result.month, result.day);
+
 	return 0;
 }
