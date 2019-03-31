@@ -31,5 +31,7 @@ date gregorian2jalali(date input) {
 		result.year+=(int)((days-1)/365);
 		days=(days-1)%365;
 	}
+	result.month=(days < 186)?1+(int)(days/31):7+(int)((days-186)/30);
+	result.day=1+((days < 186)?(days%31):((days-186)%30));
 	return result;
 }
