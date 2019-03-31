@@ -5,7 +5,7 @@ A tiny and powerful library for converting calendar date units. (gregorian, jala
 # Using
 
 ```c
-date gregorian2jalali(input);
+date result = gregorian2jalali(input);
 ```
 
 ### Functions
