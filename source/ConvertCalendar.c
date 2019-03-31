@@ -47,5 +47,11 @@ date jalali2gregorian(date input) {
 	int temp=(((int)(input.year/33))*8) + ((int)(((input.year%33)+3)/4)) + (365*input.year) + 78 + input.day + ((input.month<7)?(input.month-1) * 31 : ((input.month - 7) * 30) + 186);
 	result.year+=400*((int)(temp/146097));
 	temp%=146097;
+	if(temp > 36524) {
+		result.year+=100*((int)(--temp/36524));
+		temp%=36524;
+		if(temp >= 365)
+			temp++;
+	}
 	return result;
 }
