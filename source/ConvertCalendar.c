@@ -44,5 +44,8 @@ date jalali2gregorian(date input) {
 		input.year-=979;
 		result.year=1600;
 	}
+	int temp=(((int)(input.year/33))*8) + ((int)(((input.year%33)+3)/4)) + (365*input.year) + 78 + input.day + ((input.month<7)?(input.month-1) * 31 : ((input.month - 7) * 30) + 186);
+	result.year+=400*((int)(temp/146097));
+	temp%=146097;
 	return result;
 }
