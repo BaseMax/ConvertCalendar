@@ -37,5 +37,12 @@ date gregorian2jalali(date input) {
 }
 date jalali2gregorian(date input) {
 	date result;
+	if(input.year<=979) {
+		result.year=621;
+	}
+	else {
+		input.year-=979;
+		result.year=1600;
+	}
 	return result;
 }
