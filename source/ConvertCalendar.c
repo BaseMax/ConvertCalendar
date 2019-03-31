@@ -53,5 +53,11 @@ date jalali2gregorian(date input) {
 		if(temp >= 365)
 			temp++;
 	}
+	result.year+=4*((int)(temp/1461));
+	temp%=1461;
+	if(temp > 365) {
+		result.year+=(int)((temp-1)/365);
+		temp=(temp-1)%365;
+	}
 	return result;
 }
