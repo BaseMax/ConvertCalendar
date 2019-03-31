@@ -8,11 +8,16 @@
 * @Repository : https://github.com/BaseMax/ConvertCalendar
 *
 **/
-typedef struct {
-	// We can use the uint8_t type.
-	int year;
-	int month;
-	int day;
-} date;
+#ifndef CONVERT_CALENDAR
+#define CONVERT_CALENDAR
 
-date gregorian2jalali(date input);
+	typedef struct {
+		// We can use the uint8_t type.
+		int year;
+		int month;
+		int day;
+	} date;
+
+	date gregorian2jalali(date input);
+
+#endif
