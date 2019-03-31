@@ -64,6 +64,10 @@ date jalali2gregorian(date input) {
 	int length=sizeof(array)/sizeof(array[0]);
 	for(int index=0;index<length;index++) {
 		printf("==>%d : %d\n", index, array[index]);
+		result.month=index;
+		if(result.day<=array[index])
+			break;
+		result.day-=array[index];
 	}
 	return result;
 }
