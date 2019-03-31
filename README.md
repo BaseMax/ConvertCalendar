@@ -6,12 +6,14 @@ A tiny and powerful library for converting calendar date units. (gregorian, jala
 
 ```c
 date result = gregorian2jalali(input);
+date result = jalali2gregorian(input);
 ```
 
 ### Functions
 
 ```c
 date gregorian2jalali(date input);
+date jalali2gregorian(date input);
 ```
 
 ## Example I/O
@@ -19,6 +21,10 @@ date gregorian2jalali(date input);
 ```
 Input: 2019, 03, 31
 Output: 1398, 1, 11
+
+
+Input: 1398, 1, 13
+Output: 2019, 04, 02
 ```
 
 ## Compile Example
