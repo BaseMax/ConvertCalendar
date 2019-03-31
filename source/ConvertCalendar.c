@@ -21,5 +21,9 @@ date gregorian2jalali(date input) {
 		input.year-=1600;
 		result.year=979;
 	}
+	int temp=(input.year>2)?(input.year+1):input.year;
+	int days=((int)((temp+3)/4)) + (365*input.year) - ((int)((temp+99)/100)) - 80 + array[input.month-1] + ((int)((temp+399)/400)) + input.day;
+	result.year+=33*((int)(days/12053)); 
+	days%=12053;
 	return result;
 }
