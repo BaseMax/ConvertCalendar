@@ -19,5 +19,6 @@
 	} date;
 
 	date gregorian2jalali(date input);
+	date jalali2gregorian(date input);
 
 #endif
