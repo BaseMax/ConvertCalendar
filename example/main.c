@@ -15,8 +15,10 @@ int main() {
 	// date input={2019, 03, 31};
 	// date result=gregorian2jalali(input);
 	// printf("==> Result : %d/%d/%d\n", result.year, result.month, result.day);
+
 	date result;
 	date input;
+
 	input.year=2019;
 	input.month=03;
 	input.day=31;
