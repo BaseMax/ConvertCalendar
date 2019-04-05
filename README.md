@@ -39,3 +39,5 @@ $ ./main
   ```
 
 ## License
+
+ConvertCalendar is licensed under the [GNU General Public License](https://github.com/BaseMax/ConvertCalendar/blob/master/LICENSE).
