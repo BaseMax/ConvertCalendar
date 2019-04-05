@@ -1,6 +1,6 @@
 # Convert Calendar
 
-A tiny and powerful library for converting calendar date units. (gregorian, jalali)
+A tiny and powerful library for converting **calendar** date units. (gregorian, jalali)
 
 # Using
 
